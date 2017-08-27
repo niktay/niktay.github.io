@@ -24,7 +24,7 @@ In [2]: len(data.split('-'))
 Out[2]: 12
 ```
 
-The first observation we made is that if we split the string of characters by using `-` as the delimiter we get $12$ chunks, which is very convenient given the definition of `Dating` that we chose to adopt. There are 12 chunks, and there are (conveniently) 12 months in a year.
+The first observation we made is that we get exactly 12 chunks if we split the string of characters using `-` as the delimiter. This is very convenient given the definition of `Dating` that we chose to adopt. There are 12 chunks, and there are (conveniently) 12 months in a year.
 
 ```
 In [3]: data = data.split('-')
