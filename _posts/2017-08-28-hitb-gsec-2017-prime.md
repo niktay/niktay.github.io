@@ -12,11 +12,9 @@ comments: true
 
 > Do you know prime? 
 > 
-> [Download Attachments](/files/b48bfaf7-d728-4ae3-94b7-cd8b2e6e9077.pcap)
+> [Download Attachments](/files/ab436242-a5c7-4dd8-b88d-1982be05b3bd.apk)
 
 In this challenge, we are given an apk file. Let's start off by using JADX to decompile it so that we can perform further examination of the code.
-
-![]()
 
 ```java
 package com.iromise.prime;
