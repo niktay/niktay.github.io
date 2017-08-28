@@ -96,7 +96,7 @@ private long CalcNumber(long n) {
 }
 ```
 
-The function `CalcNumber()` loops over the range $$1$$ to $$10^{16}$$ and maintains a count of integers (`number`) in the aforementioned range that fulfils the condition imposed by `isOk()`.
+The function `CalcNumber()` with `f14N` passed in, loops over the range $$1$$ to $$10^{16}$$ and maintains a count of integers (`number`) in the aforementioned range that fulfils the condition imposed by `isOk()`.
 
 ```java
 private Boolean isOk(long n) {
@@ -115,7 +115,7 @@ private Boolean isOk(long n) {
 }
 ```
 
-At first glance, the function `isOk` seems to be checking if a number is prime. However, one little detail that we need to pay attention to is the use of `<` instead of `<=` in the terminating condition of the `for` loop. Because of this nuance, it is accepting both prime numbers and squares of prime numbers. Let's illustrate this with an example:
+At first glance, the function `isOk()` seems to be checking if a number is prime. However, one little detail that we need to pay attention to is the use of `<` instead of `<=` in the terminating condition of the `for` loop. Because of this nuance, it is accepting both prime numbers and squares of prime numbers. Let's illustrate this with an example:
 
 consider $$n = 26$$,
 
