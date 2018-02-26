@@ -17,7 +17,7 @@ body {
 }
 
 .content-container {
-  max-width: 48rem;
+  max-width: 37rem;
   padding: 5rem 1rem;
   margin-left:  auto;
   margin-right: auto;
@@ -203,7 +203,7 @@ body {
 
     &-title {
       margin-bottom: .3rem;
-      font-size : 1.4rem;
+      font-size : 1.3rem;
       font-weight: 600;
     }
 
@@ -229,6 +229,7 @@ body {
     &-previous {
       float: left;
       padding-left: 2%;
+	  font-size: .9rem;
       a {
         color: $oc-gray-6;
 
@@ -243,6 +244,7 @@ body {
     &-next {
       float: right;
       padding-right: 2%;
+	  font-size: .9rem;
       a {
         color: $oc-gray-6;
 
