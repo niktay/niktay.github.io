@@ -62,7 +62,7 @@ body {
       -webkit-transition: all .2s ease;
          -moz-transition: all .2s ease;
               transition: all .2s ease;
-      margin-right: .3rem;
+      margin-right: .6rem;
 
       &:hover,
       &:focus {
@@ -112,8 +112,8 @@ body {
 
   &-title {
     margin-top: 0rem;
-    margin-bottom: 0.3rem;
-    font-size: 2.25em;
+    margin-bottom: 0.5rem;
+    font-size: 2.1em;
     line-height: 1.2em;
     font-weight: 600;
   }
@@ -146,7 +146,8 @@ body {
           margin: 4px;
           margin-left: 0px;
           color: $oc-white;
-          background-color: $oc-gray-6;
+		  font-weight: bold;
+          background-color: #e87070;
           text-decoration: none;
           border-radius: 3px;
 
@@ -161,7 +162,7 @@ body {
         }
 
         a:visited {
-          background-color: $oc-gray-5;
+          background-color: #e87070;
         }
 
         a:visited:hover {
@@ -183,8 +184,8 @@ body {
 
 .list {
   &-post {
-    padding: 4% 2%;
-    
+    padding: 2% 2%;
+
     &:hover {
       background-color: $background-over-color;
       border-color: transparent;
@@ -202,7 +203,7 @@ body {
 
     &-title {
       margin-bottom: .3rem;
-      font-size : 1.8rem;
+      font-size : 1.4rem;
       font-weight: 600;
     }
 

@@ -3,7 +3,7 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "DYSTOPIA.SG"
+name:               "The Dystopian Knight"
 
 author:
   facebook:         niktay
@@ -23,7 +23,7 @@ author:
   email:            niktay@dystopia.sg
 
 copyright:
-  year:             2017
+  year:             2018
   name:             Nikolas Tay
 
 # Google-analytics
@@ -57,6 +57,8 @@ kramdown:
 nav:
   - name:           "About"
     url:            "/about"
+  - name:           "Pwning"
+    url:            "/pwning"
   - name:           "Archive"
     url:            "/archive"
   - name:           "Tags"
