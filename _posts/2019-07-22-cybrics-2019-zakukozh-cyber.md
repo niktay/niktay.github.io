@@ -40,7 +40,7 @@ vagrant@ubuntu-cosmic:/vagrant/zakukozh$ hexdump -C zakukozh.bin | head
 00000090  68 39 eb ab 77 19 7d fd  a4 d9 a1 b0 ef 59 f8 07  |h9..w.}......Y..|
 ```
 
-Based on the challenge description, this file is the output of an image that has been encrypted with an [affine cipher](https://en.wikipedia.org/wiki/Affine_cipher). An affine cipher is a [monoalphabetic cipher](https://en.wikipedia.org/wiki/Substitution_cipher) (implies each input has a one-to-one mapping its output) which has an encryption function of
+Based on the challenge description, this file is the output of an image that has been encrypted with an [affine cipher](https://en.wikipedia.org/wiki/Affine_cipher). An affine cipher is a [monoalphabetic cipher](https://en.wikipedia.org/wiki/Substitution_cipher) (implies each input has a one-to-one mapping to its output) which has an encryption function of
 
 $$E(x) = (ax + b)\pmod m$$
 
