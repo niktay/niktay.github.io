@@ -52,7 +52,7 @@ push    eax             ; format
 call    _printf ; printf("Give away: %p\n", system_ptr);
 ```
 
-Oh wow is the hex value given to us an actual a reference to the `system`?
+Oh wow is the hex value given to us actually a reference to `system`?
 
 ```
 .got:00001FDC system_ptr      dd offset system ; DATA XREF: main+22↑r
@@ -67,7 +67,7 @@ vagrant@ctf:/vagrant/challenges/sharky/give_away_one$ grep -obUaP "/bin/sh\x00" 
 
 Bingo! So all we have to do is to calculate the address to `/bin/sh` and use that as a parameter for our call to `system`.
 
-Consolidating all the information we have to far, we can conclude that the payload should probably look something like this:
+Consolidating all the information we have so far, we can conclude that the payload should probably look something like this:
 
 ```
 <padding of ? bytes><address(system)><padding of 4 bytes><address("/bin/sh\x00")>
