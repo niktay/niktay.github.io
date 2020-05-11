@@ -79,7 +79,7 @@ The only information we're lacking is the length of the padding. We can easily d
 
 > TL;DR: Padding is 36
 
-Okay, great. Now all we need to do is to write script to solve this.
+Okay, great. Now all we need to do is to write a script to solve this.
 
 ```python
 #! /usr/bin/python2

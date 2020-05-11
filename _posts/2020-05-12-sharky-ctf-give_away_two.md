@@ -62,7 +62,7 @@ vagrant@ctf:/vagrant/challenges/sharky/give_away_two$ checksec give_away_2
     PIE:      PIE enabled
 ```
 
-Okay, that explains it. This is a [Position Independent Executable (PIE)](https://codywu2010.wordpress.com/2014/11/29/about-elf-pie-pic-and-else/). In the context of this challenge, it means that the address of `main` would be every run (assuming [ASLR](https://en.wikipedia.org/wiki/Address_space_layout_randomization) is turned on). We can verify this by running the binary multiple times.
+Okay, that explains it. This is a [Position Independent Executable (PIE)](https://codywu2010.wordpress.com/2014/11/29/about-elf-pie-pic-and-else/). In the context of this challenge, it means that the address of `main` would be different every run (assuming [ASLR](https://en.wikipedia.org/wiki/Address_space_layout_randomization) is turned on). We can verify this by running the binary multiple times.
 
 ```
 vagrant@ctf:/vagrant/challenges/sharky/give_away_two$ ./give_away_2
