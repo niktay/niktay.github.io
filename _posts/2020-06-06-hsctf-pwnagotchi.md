@@ -38,7 +38,7 @@ AAAAA is not happy!
 
 ```
 
-Once we run the binary, it asks us for our name and repeats to back to us. Let's disassemble the binary to get a better idea of what goes on.
+Once we run the binary, it asks us for our name and repeats it back to us. Let's disassemble the binary to get a better idea of what's going on.
 
 ```nasm
 lea     rdi, aEnterYourPwnag ; "Enter your pwnagotchi's name: "
