@@ -50,4 +50,4 @@ Oh what do we have here? A room called `rWinner`? I like the sound of that! Let'
 
 Awesome, looks like we got our flag!
 
-Flag: `flag{a_cLOud_iS_jUSt_sOmeBodY_eLSes_cOMpUteR}`
+Flag: `flag{gms_succs_kiddo}`
