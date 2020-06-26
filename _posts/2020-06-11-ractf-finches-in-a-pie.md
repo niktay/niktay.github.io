@@ -71,7 +71,7 @@ Would you like some cake?
 %p
 ```
 
-Ah looks like we're right! Since we have a format string vulnerability that we can exploit, we've effectively gotten ourselves a read primitive and write primitive. So the canary and PIE should not pose and issue anymore, since there's a good chance that we can leak the canary value, and an address within the program. While we're at it, let's test if they're performing proper bounds checking for the size of our input.
+Ah looks like we're right! Since we have a format string vulnerability that we can exploit, we've effectively gotten ourselves a read primitive and write primitive. So the canary and PIE should not pose an issue anymore since there's a good chance that we can leak the canary value, and an address within the program. While we're at it, let's test if they're performing proper bounds checking for the size of our input.
 
 ```
 vagrant@ctf:/vagrant/challenges/ractf/Finches in a Pie$ ./fiap
