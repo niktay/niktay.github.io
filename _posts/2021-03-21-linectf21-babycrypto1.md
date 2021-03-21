@@ -118,7 +118,7 @@ Lets approach this problem by zooming in on the part we are most interested in, 
 token = b64encode(get_random_bytes(AES.block_size*10))[:AES.block_size*10]
 ```
 
-As seen from the snippet of code above, the size of our token is going to be aligned to the block size. Therefore, we can assume that the **last block contains only the command (plus padding)** since encryption is performed on `token + command`. So let's focus solely on what actually matters.
+As seen from the snippet of code above, the size of our token is going to be aligned to the block size. Therefore, we can assume that the **last block contains only the command (plus padding)** since encryption is performed on `token + command`. So lets focus solely on what actually matters.
 
 ![](/images/babycrypto1/AES-CBC-decrypt-simplified.png)
 
@@ -140,7 +140,7 @@ Do you see the resemblance? No? Well let me help you out a little.
 
 That's right, all we have to do is to encrypt 'show' and set the IV to $$C_{n-1}$$ to figure out what the ciphertext should be! Conveniently, the challenge provides us with a "Cipher Oracle" which lets us encrypt an arbitrary message using an IV which we can also supply.
 
-So let's recap our game plan:
+So lets recap our game plan:
 
 1. Read in the test command and extract out the second last block i.e. $$C_{n-1}$$
 2. Use the "Cipher Oracle" to encrypt 'show' with $$C_{n-1}$$ from step 1 as the IV. Read in the ciphertext.
