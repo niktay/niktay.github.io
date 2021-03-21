@@ -15,7 +15,7 @@ comments: true
 > [babycrypto1.py](/files/babycrypto1.py)
 
 
-In this challenge we are provided with the ip and port of a network service and a python script which seemingly contains the code of the network service. Let's have a look at the code shall we?
+In this challenge we are provided with the ip and port of a network service and a python script which seemingly contains the code of the network service. Lets have a look at the code shall we?
 
 ```python
 flag = open("flag", "rb").read().strip()
@@ -102,7 +102,7 @@ It's possible, but requires some ingenuity on our part. The first step to enligh
 
 ![](/images/babycrypto1/AES-CBC-decrypt.png)
 
-Let's first try to understand how decryption works in CBC mode. We can generalize the above diagram as follows:
+Lets first try to understand how decryption works in CBC mode. We can generalize the above diagram as follows:
 
 Where $$n$$ is the block number, $$C$$ is the Ciphertext, $$P$$ is the Plaintext, and $$D(x)$$ is the decryption function, and $$K$$ is the key,
 
@@ -112,7 +112,7 @@ P_n = \begin{cases} D(C_{n},~K)~\oplus~\text{IV} & n = 1 \\
       \end{cases}
 $$
 
-Let's approach this problem by zooming in on the part we are most interested in, the command.
+Lets approach this problem by zooming in on the part we are most interested in, the command.
 
 ```python
 token = b64encode(get_random_bytes(AES.block_size*10))[:AES.block_size*10]
@@ -147,7 +147,7 @@ So let's recap our game plan:
 3. Append the ciphertext from step 2 to the test command from step 1 (less the last block since we are replacing it).
 4. Get flag. Profit!
 
-We now craft the following script to implemnt the step above.
+We now craft the following script to implement the steps above.
 
 ```python
 from pwn import *
