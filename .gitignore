@@ -4,4 +4,5 @@ Gemfile.lock
 _drafts
 .jsbeautifyrc
 .jekyll-cache
+.jekyll-metadata
 .DS_Store
