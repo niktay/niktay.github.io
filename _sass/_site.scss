@@ -19,7 +19,7 @@ body {
 
 .content-container {
   max-width: 100vw;
-  padding: 5rem 1rem;
+  padding: 1rem 1rem;
   margin-left:  auto;
   margin-right: auto;
 
@@ -112,9 +112,9 @@ body {
   &-title {
     margin-top: 0;
     margin-bottom: 2rem;
-    font-size: 2.25em;
+    font-size: 2.3em;
     line-height: 1.2em;
-    font-weight: 600;
+    font-weight: 900;
   }
 }
 
@@ -239,9 +239,7 @@ body {
   }
 
   &-pagination {
-    margin-top: 4rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 1rem 0rem;
     // text-transform: lowercase;
 
     &-previous {
@@ -391,10 +389,13 @@ body {
   -------------- */
 .footer {
   text-align: center;
+  text-transform: uppercase;
   font-size: .75rem;
+  color: $base-color;
 
   &-link {
     margin: .2rem;
+    margin-bottom: .5rem;
 
     a {
       color: $base-color;

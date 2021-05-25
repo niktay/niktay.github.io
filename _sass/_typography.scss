@@ -8,14 +8,16 @@ body {
   font: $base-font;
   font-size: $base-font-size;
   font-weight: 500;
-  text-align: justify;
   color: $text-color;
   background-color: $background-color;
   -webkit-font-smoothing: antialiased;
+  text-align: justify;
+  hyphens: auto;
 
   @media (max-width: 38rem){
     font-size: $mobile-font-size;
-    font-weight: 300;
+    font-weight: 500;
+    text-align: left;
   }
 }
 
@@ -45,7 +47,6 @@ h1 {
   padding-bottom: 0.3em;
   font-size: 2.25em;
   line-height: 1.2em;
-  border-bottom: 1px solid #eee;
 }
 
 h2 {
@@ -53,7 +54,6 @@ h2 {
   padding-bottom: 0.3em;
   font-size: 1.75em;
   line-height: 1.225em;
-  border-bottom: 1px solid #eee;
 }
 
 h3 { 
@@ -81,7 +81,12 @@ h6 {
 p {
   color: $text-color;
   margin: 0 0 1rem;
-  line-height: 1.7em;
+  line-height: 2.0em;
+  code {
+      word-break: break-all;
+      overflow-wrap: break-word;
+      hyphens: auto;
+  }
 }
 
 /*--------------
@@ -266,7 +271,7 @@ pre {
 }
 
 code {
-  padding: .25em .5em;
+  padding: .25em .35em;
   font-size: 100%;
   color: $code-color;
   background-color: $code-background-color;
@@ -277,9 +282,9 @@ pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  padding: .5rem;
+  padding: 1rem;
   font-size: .8rem;
-  line-height: 1.4;
+  line-height: 1.5;
   white-space: pre;
   overflow: auto;
   background-color: $code-background-color;
@@ -335,8 +340,10 @@ pre code {
   -------------- */
 
 img {
+  background-color: $oc-white;
   display: block;
   max-width: 100%;
+  padding: 1rem 0;
   margin: 0 0 1rem;
   border-radius: 5px;
 }
