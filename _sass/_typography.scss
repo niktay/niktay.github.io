@@ -148,8 +148,7 @@ ol,
 ul {
   > li {
     margin: 0 auto $li-bottom-space $li-bullets-width;
-    line-height: $li-line-height;
-    
+    //line-height: $li-line-height;
     > ol,
     > ul {
       margin-top: $li-bottom-space;
@@ -203,7 +202,7 @@ hr {
 
 strong {
   color: $oc-gray-1;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 abbr {
@@ -222,7 +221,7 @@ blockquote {
   padding: 0 0 0 1.4rem;
   margin: 0 2rem 1rem 0;
   color: $oc-gray-6;
-  border-left: .3rem solid $oc-gray-3;
+  border-left: .3rem solid $oc-gray-8;
 
   p:last-child {
     margin-bottom: 0;
