@@ -11,6 +11,22 @@ html {
   line-height: 2.0;
 }
 
+*::-webkit-scrollbar {
+  height: 7px;
+  width: 5px;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $oc-gray-7;
+  border-radius: 5px 5px 5px 5px;
+}
+
 html,
 body {
   margin: 0;
@@ -115,6 +131,7 @@ body {
     font-size: 2.3em;
     line-height: 1.2em;
     font-weight: 900;
+    text-transform: uppercase;
   }
 }
 
@@ -130,7 +147,8 @@ body {
     font-size: 2.3em;
     line-height: 1.2em;
     font-weight: 900;
-    color: $oc-teal-5;
+    color: $oc-gray-1;
+    text-transform: uppercase;
   }
 
   &-date {
@@ -177,11 +195,11 @@ body {
         }
 
         a:visited {
-          background-color: #e87070;
+          background-color: $oc-indigo-8;
         }
 
         a:visited:hover {
-          background-color: $oc-gray-7;
+          background-color: $oc-indigo-5;
         }
       }
     }
@@ -296,6 +314,7 @@ body {
           margin: 4px;
           margin-left: 0px;
           color: $oc-indigo-1;
+          white-space: nowrap;
           background-color: $oc-indigo-6;
           text-decoration: none;
           border-radius: 3px;
@@ -371,7 +390,7 @@ body {
 
       &-title {
         font-size : 1.2rem;
-        font-weight: 400;
+        font-weight: 600;
       }
 
       &-date {
